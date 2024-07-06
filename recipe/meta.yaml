@@ -1,5 +1,5 @@
 {% set name = "pypeec" %}
-{% set version = "4.18.0" %}
+{% set version = "4.18.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypeec-{{ version }}.tar.gz
-  sha256: 851a50fdb4712a009305ef28419cb8057afc40af19abe1b8ca33ea0bf31f4ecf
+  sha256: 7141f0dac9d5dc169b76af24bf8c9d1ed6f552d76cc49b778274f70c2ec3a047
 
 build:
   entry_points:
@@ -27,8 +27,8 @@ requirements:
     - python >=3.9
     - pyyaml >=6.0
     - joblib >=1.3
-    - numpy >=1.24
-    - scipy >=1.9
+    - numpy >=1.24, < 1.27
+    - scipy >=1.9, < 1.14
     - matplotlib >=3.7
     - shapely >=2.0
     - rasterio >=1.3
