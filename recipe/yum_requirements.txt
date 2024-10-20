@@ -1,2 +1,3 @@
 mesa-libGL-devel
 libXcursor-devel
+xorg-x11-server-Xorg
