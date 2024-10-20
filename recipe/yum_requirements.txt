@@ -1,3 +1,9 @@
+mesa-libGL
 mesa-libGL-devel
-libXcursor-devel
-xorg-x11-server-Xorg
+mesa-libEGL-devel
+mesa-dri-drivers
+libX11-devel
+libglvnd-glx
+libglvnd-egl
+libglvnd-opengl
+
