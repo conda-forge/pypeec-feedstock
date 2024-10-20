@@ -1,5 +1,5 @@
 {% set name = "pypeec" %}
-{% set version = "5.0.1" %}
+{% set version = "5.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypeec-{{ version }}.tar.gz
-  sha256: 59bbc620774fd85d01791604835eadd7f18c903ed5fb441043d806b045d6b658
+  sha256: f2b106e3a227845bde529ba161b5329c66e35896dad0f89cdd8ac09c420b3c46
 
 build:
   entry_points:
-    - pypeec = pypeec.script:run_script
+    - pypeec = pypeec:run_script
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
@@ -25,10 +25,13 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - pyyaml >=6.0
+    - scilogger >=1.1
+    - scisave >=1.2
+    - jsonschema >=4.23
     - joblib >=1.3
     - numpy >=1.24, < 1.27
     - scipy >=1.9, < 1.14
+    - vtk >=9.2, < 9.3
     - matplotlib >=3.7
     - shapely >=2.0
     - rasterio >=1.3
@@ -36,13 +39,11 @@ requirements:
     - pyvista >=0.40
     - pyvistaqt >=0.11
     - pyqt >=5.15
-    - vtk >=9.2
+
 
 test:
   imports:
     - pypeec
-    - pypeec.io
-    - pypeec.log
     - pypeec.main
     - pypeec.script
     - pypeec.run.mesher
