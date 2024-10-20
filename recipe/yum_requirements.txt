@@ -1,2 +1,2 @@
 mesa-libGL-devel
-libXcursor
+libXcursor-devel
