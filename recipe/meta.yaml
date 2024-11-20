@@ -53,7 +53,8 @@ test:
     - pypeec --version
     - pypeec --help
   requires:
-    - pip
+    - python 3.10
+    - pip >=24.2
 
 about:
   summary: PyPEEC - 3D PEEC Solver
