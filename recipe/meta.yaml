@@ -54,7 +54,7 @@ test:
     - pypeec --version
     - pypeec --help
   requires:
-    - python 3.10
+    - python {{ python_min }}
     - pip >=24.2
 
 about:
