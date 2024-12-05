@@ -1,5 +1,5 @@
 {% set name = "pypeec" %}
-{% set version = "5.3.0" %}
+{% set version = "5.3.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypeec-{{ version }}.tar.gz
-  sha256: 4549c86c25c1904c2c0249df9b10ecf7b5b148eebe2a20fd4a23dc9aa2081b17
+  sha256: 0a47e026d0e4a6b56d3e0f618a6c77e52dbd9aa8a5a3dfa4aa5a25f60e44d8dc
 
 build:
   entry_points:
@@ -39,7 +39,7 @@ requirements:
     - pillow >=10.0
     - pyqt >=5.15
     - pyvistaqt >=0.11
-    - matplotlib >=3.7
+    - matplotlib-base >=3.7
   
 test:
   imports:
