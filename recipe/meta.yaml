@@ -58,7 +58,7 @@ test:
     - pip >=24.2
 
 about:
-  summary: PyPEEC - 3D PEEC Solver
+  summary: PyPEEC - 3D Quasi-Magnetostatic Solver
   description: |
     PyPEEC is a 3D quasi-magnetostatic PEEC solver developed at Dartmouth
     College within the Power Management Integration Center (PMIC). PyPEEC 
