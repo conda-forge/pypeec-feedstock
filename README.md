@@ -7,7 +7,7 @@ Home: https://github.com/otvam/pypeec
 
 Package license: MPL-2.0
 
-Summary: PyPEEC - 3D PEEC Solver
+Summary: PyPEEC - 3D Quasi-Magnetostatic Solver
 
 Development: https://github.com/otvam/pypeec
 
