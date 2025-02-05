@@ -1,5 +1,5 @@
 {% set name = "pypeec" %}
-{% set version = "5.5.2" %}
+{% set version = "5.5.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypeec-{{ version }}.tar.gz
-  sha256: b99ae9fb5d46b057beb3b0a1e649cddd8a4a46b068fc9d51316e4edf1388a399
+  sha256: f401ab90adff0ea4cd986b0bffce1883371e71b8e9846c7aa9c2a0216f842ac6
 
 build:
   entry_points:
