@@ -1,5 +1,5 @@
 {% set name = "pypeec" %}
-{% set version = "5.5.4" %}
+{% set version = "5.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypeec-{{ version }}.tar.gz
-  sha256: 82efbbac8dda248bece4920b455275d03b5ef574d499b698fa8ee2c2468a0a35
+  sha256: 1e3795d3db1ebbff7cc39072cdfd7e27cb94532d612ecde780c48ea5e033af80
 
 build:
   entry_points:
@@ -27,7 +27,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - scilogger >=1.2.4
-    - scisave >=1.4.5
+    - scisave >=1.6.0
     - jsonschema >=4.23.0
     - numpy >=1.24.0
     - scipy >=1.12.0
