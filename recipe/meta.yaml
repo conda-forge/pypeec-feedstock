@@ -1,5 +1,5 @@
 {% set name = "pypeec" %}
-{% set version = "5.7.4" %}
+{% set version = "5.8.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pypeec-{{ version }}.tar.gz
-  sha256: 540678c8685f0df079331754ef759f9ebe2f4fe08b461a6a1ba8db82c91c5799
+  sha256: 8e83883b5b3f651e1f453cd42ccd92796f04dea0e0b819184baaae5622035281
 
 build:
   entry_points:
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=78.1
+    - setuptools >=80.9
     - setuptools-scm >=8.2
     - wheel >=0.45
-    - pip >=25.1
+    - pip >=25.3
   run:
     - python >={{ python_min }}
     - scilogger >=1.2.5
